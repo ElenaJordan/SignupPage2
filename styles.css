@@ -31,13 +31,17 @@ p {
 
 label {
     color: black;
-    font-size: large;
+    font-size: x-large;
 }
 
 input {
     background-color: white;
     padding: 0.8em;
     border-radius: 8px;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 form {
@@ -51,6 +55,7 @@ form {
 button {
     border-radius: 8px;
     padding: 1em;
+    min-width: 30%;
 }
 
 .containerPage {
@@ -87,7 +92,7 @@ button {
 .containerRight {
     height: 100vh;
     flex-grow: 1;
-    background-color: rgba(120, 190, 202, 0.7);
+    background-color: rgba(120, 190, 202, 0.5);
 }
 
 .imageDesc {
@@ -160,4 +165,12 @@ button {
 
 .footerP {
     padding-top: 1em;
+}
+
+.formButtons {
+    width: 45%;
+    display: flex;
+    height: 9%;
+    justify-content: space-around;
+    align-items: center;
 }
